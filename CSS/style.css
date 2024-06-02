@@ -1,0 +1,46 @@
+:root {
+  --primary: #d5b895; /*sebagai warna dominan untuk latar belakang atau elemen besar. */
+  --secondary: #36454f; /* untuk aksen atau elemen desain yang lebih kecil untuk memberikan kontras. */
+  --font: #c5dec4; /* sebagai highlight atau detail penting untuk menambahkan kesan(font) */
+}
+
+html {
+  background-color: var(--primary);
+  color: var(--font);
+  height: 1000px;
+  font-family: "Poppins", "sans-sheriff";
+}
+
+/* navbar section */
+.navbar {
+  background-color: var(--secondary);
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+/* navbar band section */
+.brand {
+  padding: 0 3rem;
+}
+/* navbar band section */
+
+/* navbar list section */
+.nav-list {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.nav-list li {
+  margin: 0 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--font);
+}
+/* navbar list section */
+/* navbar section */
