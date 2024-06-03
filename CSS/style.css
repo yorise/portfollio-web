@@ -1,15 +1,30 @@
 :root {
   --primary: #d5b895; /*sebagai warna dominan untuk latar belakang atau elemen besar. */
   --secondary: #36454f; /* untuk aksen atau elemen desain yang lebih kecil untuk memberikan kontras. */
-  --font: #c5dec4; /* sebagai highlight atau detail penting untuk menambahkan kesan(font) */
+  --highlight: #c5dec4; /* sebagai highlight atau detail penting untuk menambahkan kesan(font) */
 }
+
+/* Global Selector */
 
 html {
   background-color: var(--primary);
-  color: var(--font);
+  color: var(--secondary);
   height: 1000px;
   font-family: "Poppins", "sans-sheriff";
+  scroll-behavior: smooth;
 }
+
+h1 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+section {
+  padding: 5rem 0;
+  margin: 0;
+}
+
+/* Global Selector */
 
 /* navbar section */
 .navbar {
@@ -17,22 +32,47 @@ html {
   display: flex;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
+  color: var(--highlight);
 }
 
-/* navbar band section */
+/* navbar brand section */
 .brand {
   padding: 0 3rem;
+  font-size: 1.5rem;
 }
-/* navbar band section */
+
+.brand a span {
+  color: var(--primary);
+}
+
+.brand a {
+  text-decoration: none;
+  color: var(--font);
+}
+/* navbar brand section */
 
 /* navbar list section */
 .nav-list {
   display: flex;
   align-items: center;
   padding: 0 3rem;
+  font-size: 1rem;
 }
+
+/* navbar active session */
+
+.nav-list .active {
+  background-color: #363d44af;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+/* navbar active session */
 
 .nav-list li {
   margin: 0 2rem;
@@ -40,7 +80,33 @@ html {
 
 .nav-list a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--highlight);
+}
+
+.nav-list a:hover {
+  color: var(--primary);
 }
 /* navbar list section */
 /* navbar section */
+
+/* about section */
+.content {
+  display: flex;
+  margin: 2rem 7rem;
+  border: 1px solid var(--secondary);
+}
+
+.content p {
+  text-align: justify;
+  margin: 3rem;
+  font-size: 1.3rem;
+}
+
+.content img {
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+  margin: 3rem;
+}
+
+/* about section */

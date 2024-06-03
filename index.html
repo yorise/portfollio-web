@@ -21,14 +21,16 @@
     <header>
       <!-- navbar section -->
       <nav class="navbar">
-        <h3 class="brand">yori.me</h3>
+        <h3 class="brand">
+          <a href="#">yori<span>.me</span></a>
+        </h3>
         <!-- navbar list section -->
         <ul class="nav-list" type="none">
-          <li id="about"><a href="">About Me</a></li>
-          <li id="education"><a href="">Education</a></li>
-          <li id="skills"><a href="">Skills</a></li>
-          <li id="projects"><a href="">Projects</a></li>
-          <li id="contact"><a href="">Contact</a></li>
+          <li class="active"><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <!-- navbar list section -->
       </nav>
@@ -36,7 +38,39 @@
     </header>
 
     <!-- main content section -->
-    <div class="container"></div>
+    <div class="container">
+      <!-- Section about me -->
+      <section id="about">
+        <h1>ABOUT ME</h1>
+        <div class="content">
+          <p>
+            Hi, I'm Awwal Yori Fairuzy, but you can call me Yori. I'm a student
+            in the Software Engineering program at CCIT FTUI in Depok,
+            Indonesia. I love learning new things as it always presents a unique
+            challenge when I successfully overcome them. However, I tend to be a
+            bit careless and forgetful when it comes to small details that I
+            consider unimportant, but are actually important.
+          </p>
+          <img src="./assets/img/yori.jpg" alt="myself/awwalyori" />
+        </div>
+      </section>
+      <!-- Section about me -->
+      <section id="education">
+        <h1>EDUCATION</h1>
+      </section>
+      <section id="skills">
+        <h1>SKILLS</h1>
+      </section>
+      <section id="projects">
+        <h1>PROJECTS</h1>
+      </section>
+      <section id="contact">
+        <h1>CONTACT</h1>
+      </section>
+    </div>
     <!-- main content section -->
+
+    <!-- Script JavaScript -->
+    <script src="JavaScript/script.js"></script>
   </body>
 </html>
