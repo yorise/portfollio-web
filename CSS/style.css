@@ -103,6 +103,7 @@ section#home {
 section#home .box-content {
   margin: auto;
   background-color: var(--box);
+  border: 0.1rem solid var(--secondary);
   padding: 2rem;
   border-radius: 1rem;
 }
@@ -118,6 +119,27 @@ h2 {
   margin: 0;
 }
 
+#home button {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--highlight);
+}
+
+#home button:hover {
+  background-color: var(--secondary);
+  transition: 0.3s;
+}
+
+#home button a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+#home button:hover a {
+  color: var(--highlight);
+}
+
 #home img {
   border-radius: 50%;
   width: 70%;
@@ -129,18 +151,17 @@ h2 {
 /* home section */
 
 /* about section */
-.content {
+.about-content {
   display: flex;
-  border: 1px solid var(--secondary);
 }
 
-.content p {
+.about-content p {
   text-align: justify;
   margin: 3rem;
   font-size: 1.3rem;
 }
 
-.content img {
+.about-content img {
   height: 35%;
   width: 35%;
   border-radius: 50%;
