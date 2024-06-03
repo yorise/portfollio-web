@@ -2,6 +2,7 @@
   --primary: #d5b895; /*sebagai warna dominan untuk latar belakang atau elemen besar. */
   --secondary: #36454f; /* untuk aksen atau elemen desain yang lebih kecil untuk memberikan kontras. */
   --highlight: #c5dec4; /* sebagai highlight atau detail penting untuk menambahkan kesan(font) */
+  --box: #b2a18a; /* sebagai warna background box atau highlight besar karena selaras dengan primary */
 }
 
 /* Global Selector */
@@ -9,9 +10,12 @@
 html {
   background-color: var(--primary);
   color: var(--secondary);
-  height: 1000px;
   font-family: "Poppins", "sans-sheriff";
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
 
 h1 {
@@ -20,8 +24,9 @@ h1 {
 }
 
 section {
-  padding: 5rem 0;
-  margin: 0;
+  height: 100vh;
+  padding: 6rem 0;
+  margin: 0 7rem;
 }
 
 /* Global Selector */
@@ -52,7 +57,7 @@ section {
 
 .brand a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--highlight);
 }
 /* navbar brand section */
 
@@ -89,10 +94,43 @@ section {
 /* navbar list section */
 /* navbar section */
 
+/* home section */
+
+section#home {
+  display: flex;
+}
+
+section#home .box-content {
+  margin: auto;
+  background-color: var(--box);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#home .box-content h1,
+h2 span {
+  color: var(--highlight);
+}
+
+#home h1,
+h2 {
+  text-align: left;
+  margin: 0;
+}
+
+#home img {
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: 2rem;
+  border: 0.5rem solid var(--box);
+}
+
+/* home section */
+
 /* about section */
 .content {
   display: flex;
-  margin: 2rem 7rem;
   border: 1px solid var(--secondary);
 }
 

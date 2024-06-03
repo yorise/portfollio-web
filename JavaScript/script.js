@@ -8,7 +8,7 @@ const navlist = navbar.querySelectorAll("li a");
 function changeActiveLink() {
   section.forEach((section) => {
     let top = window.scrollY;
-    let offset = section.offsetTop - 50;
+    let offset = section.offsetTop - 100;
     let height = section.offsetHeight;
     let id = section.getAttribute("id");
 
@@ -26,3 +26,7 @@ function changeActiveLink() {
 window.addEventListener("scroll", changeActiveLink);
 
 //navbar section
+
+// home section
+
+// home section
