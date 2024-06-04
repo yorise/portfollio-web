@@ -25,7 +25,7 @@ h1 {
 
 section {
   height: 100vh;
-  padding: 6rem 0;
+  padding: 5rem 0;
   margin: 0 7rem;
 }
 
@@ -72,7 +72,6 @@ section {
 /* navbar active session */
 
 .nav-list .active {
-  background-color: #363d44af;
   font-size: 0.9rem;
   color: var(--primary);
 }
@@ -145,21 +144,66 @@ h2 {
   width: 70%;
   height: 70%;
   margin: 2rem;
-  border: 0.5rem solid var(--box);
+  border: 0.2rem solid var(--secondary);
 }
 
 /* home section */
 
 /* about section */
-.about-content {
-  display: flex;
+
+section#about {
+  margin: 0;
 }
 
-.about-content p {
-  text-align: justify;
-  margin: 3rem;
-  font-size: 1.3rem;
+/* bg parallax section */
+
+.about-content {
+  display: flex;
+  background-image: url(../assets/img/skill-img-section.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.about-content .content {
+  text-align: justify;
+  margin: auto 5rem;
+  font-size: 1.2rem;
+  color: var(--highlight);
+  background-color: var(--secondary);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+
+/* bg parallax section */
+
+/* content section */
+
+.about-content .content h3 {
+  text-align: center;
+}
+
+/* icon */
+
+.about-content .content .icon {
+  width: 100%;
+  text-align: center;
+}
+
+.about-content .content i {
+  font-size: 2rem;
+  margin: auto 1rem;
+  color: var(--highlight);
+}
+
+.about-content .content i:hover {
+  font-size: 1.9rem;
+  color: var(--box);
+}
+
+/* icon */
+/* content section */
 
 .about-content img {
   height: 35%;
@@ -169,3 +213,30 @@ h2 {
 }
 
 /* about section */
+
+/* skill section */
+
+.skill-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-content .content {
+  border: 1px solid var(--secondary);
+  width: 50%;
+  text-align: center;
+}
+
+.skill-content h2 {
+  text-align: center;
+}
+
+/* web content */
+
+/* web content */
+
+/* backend content */
+
+/* backend content */
+
+/* skill section */
