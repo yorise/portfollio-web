@@ -278,3 +278,18 @@ section#about {
 /* backend content */
 
 /* skill section */
+
+/* copyright section */
+
+footer {
+  background-color: var(--secondary);
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+}
+
+footer h3 {
+  color: var(--highlight);
+}
+
+/* copyright section */
