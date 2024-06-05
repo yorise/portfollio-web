@@ -222,13 +222,51 @@ section#about {
 }
 
 .skill-content .content {
-  border: 1px solid var(--secondary);
+  background-color: var(--box);
+  border: 0.1rem solid var(--secondary);
   width: 50%;
   text-align: center;
+  margin: 1rem 3rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: width 0.3s, font-size 1s;
+}
+
+.skill-content .content:hover {
+  width: 65%;
+  font-size: 1.2rem;
+  box-shadow: 0px 15px 30px rgb(197, 222, 196, 0.5),
+    -15px 0px 30px rgb(197, 222, 196, 0.5),
+    15px 0px 30px rgba(197, 222, 196, 0.5); /* Bayangan saat di-hover */
 }
 
 .skill-content h2 {
   text-align: center;
+}
+
+.skill-content .content i {
+  font-size: 10rem;
+  margin: 3rem;
+}
+
+.skill-content .content button {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--highlight);
+}
+
+.skill-content .content button:hover {
+  background-color: var(--secondary);
+  transition: 0.3s;
+}
+
+.skill-content .content a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.skill-content .content button:hover a {
+  color: var(--highlight);
 }
 
 /* web content */
